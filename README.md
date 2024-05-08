@@ -56,7 +56,7 @@ To run the project, you need to install the required libraries.
 
 You can click on the badge links to learn more about each library and its specific version used in this project. You can install them manually using pip install <library name> or just running pip install -r requirements.txt.
 
-Install the required libraries:
+Install the packages from the ```requirements.txt``` file.
 
    - [![python version](https://img.shields.io/badge/python-3.x-blue)](https://python.org)
    - [![Pandas version](https://img.shields.io/badge/pandas-2.x-green)](https://pandas.pydata.org/)
@@ -67,9 +67,7 @@ Install the required libraries:
    - [![imblearn version](https://img.shields.io/badge/imblearn-0.x-%f89938?color=%f89938)](https://imbalanced-learn.org/stable/)
    - [![scipy version](https://img.shields.io/badge/scipy-1.x-%f89938?color=%f89938)](https://scipy.org/)
    - [![graphviz version](https://img.shields.io/badge/graphviz-2.x-%f89938?color=%f89938)](https://graphviz.org/)
-
-Install the packages from the ```requirements.py``` file.
-   
+ 
 
 ### ⚙️ Installation
 
@@ -110,24 +108,21 @@ To use this repository, follow these steps:
 5. **Explore the script app.py**
     - The `app.py` script contains everything for running the app.
 
-6. **Open the app** 🎉
-
-    [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://immo-eliza-deployment-3pzskfv3wyawvpj4u52pwg.streamlit.app/)
-
-## 🎨 Visuals
-Will be added soon.
-
-## 👑 Resources
+## 👑 Data Sources
 [Streamlit documentation](https://docs.streamlit.io/)
 
 [Deploy your app](https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app)
 
+https://www.kaggle.com/code/tkunzler/credit-card-customer-segmentation-eda#TABLE-OF-CONTENTS
+
+## 🎨 Visuals
+Will be added soon.
 
 ## ⏱️ Timeline
 This project took form in five days.
 
 ## 📌 Personal Situation
-This project was made as part of the AI Bootcamp at BeCode.org.
+This project was made as part of the AI Bootcamp at BeCode.
 
 ## 🔧 Maintainers
 Connect with me on [LinkedIn](https://www.linkedin.com/in/fabienne-th%C3%BCer-56a8a0a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGVOLSNIkQnaKEDrsWD%2BY6w%3D%3D).
