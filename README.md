@@ -3,18 +3,18 @@
 [![forthebadge made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 ## 🧐 Description
-An important financial institution is interested in analyzing its client database to increase the revenue generated from credit cardholders. They are concern about customers closing their bank accounts after accepting products from other institutions.
+An important financial institution is interested in analyzing its client database to increase the revenue generated from credit cardholders. They are concerned about customers closing their bank accounts after accepting products from other institutions.
 
 The churn rate is above 15% and increasing, the CEO urges the marketing team to start a marketing campaign for client retention.
 
 Your mission:
 
 - Predict those clients with more propensity to close their bank account with the financial institution
-- Find possible groups of clients and define their characteristics. This will help the marketing team to design custom-made campaigns to increase customer retention.
+- Find possible groups of clients and define their characteristics. This will help the marketing team to design custom-made campaigns to increase customer retention. (will be discussed later)
 
-![alt text](src/0_g8Tw7FNqfLJXptYE.webp)
+![customer churn](src/0_g8Tw7FNqfLJXptYE.webp)
 
-#### What is Churn Rate ?
+What is Churn Rate?
 
 _The churn rate, also known as the rate of attrition or customer churn, is the rate at which customers stop doing business with an entity. It is most commonly expressed as the percentage of service subscribers who discontinue their subscriptions within a given time period._
 
@@ -24,39 +24,39 @@ _The churn rate, also known as the rate of attrition or customer churn, is the r
 
 ```md
 
-
+├── data\
+│   ├── BankChurners.csv
+│   ├── churners_clean_df.csv
+│   └── churners_df.csv
+│
 ├── src\
 │   └── 0_g8Tw7FNqfLJXptYE.webp
 │
+├── visuals\
+│   ├── ROC.png
+│   ├── decision_tree_grphviz
+│   ├── decision_tree_grphviz.png
+│   ├── decistion_tree.log
+│   ├── decistion_tree.png
+│   ├── feature_importance.png
+│   ├── heatmap.png
+│   └── pairplot.png
+│
 ├── .gitignore
-├── 08-customer_churn_analysis.md
-├── BankChurners.csv
 ├── README.md
-├── ROC.ipynb
-├── ROC.png
-├── churners_clean_df.csv
-├── churners_df.csv
-├── decision_tree_grphviz
-├── decision_tree_grphviz.png
-├── decistion_tree.log
-├── decistion_tree.png
+├── classification.ipynb
 ├── exploration.ipynb
-├── imbalanced_data.ipynb
-├── outliers.ipynb
-├── preperation.ipynb
-└── trees.ipynb
+└── requirements.txt
 
 ```
 
-## 🏁 Getting Started
+## ⏏️ Getting Started
 
 ### 📚 Prerequisities
 
-To run the project, you need to install the required libraries. 
+To run the project, you need to install the required libraries. You will find them in the ```requirements.txt``` file.
 
 You can click on the badge links to learn more about each library and its specific version used in this project. You can install them manually using pip install <library name> or just running pip install -r requirements.txt.
-
-Install the packages from the ```requirements.txt``` file.
 
    - [![python version](https://img.shields.io/badge/python-3.x-blue)](https://python.org)
    - [![Pandas version](https://img.shields.io/badge/pandas-2.x-green)](https://pandas.pydata.org/)
@@ -81,10 +81,10 @@ Install the packages from the ```requirements.txt``` file.
     cd churn-prediction
     ```
 
-3. You're all set! You can now explore the `data` and `model` directories. You can find the script for the app in `app.py`.<br>
+3. You're all set! You can now go through the `exploration`and  `classification` notebooks. <br>
 Enjoy!
 
-## 🎈 Usage
+## 📋 Usage
 To use this repository, follow these steps:
 
 1. **Clone the Repository**: 
@@ -99,24 +99,59 @@ To use this repository, follow these steps:
     cd churn-prediction
     ```
 
-3. **Explore the data**:
-    - The `data` directory contains the dataset used. Explore the data file to understand its structure and contents. You can use the included Jupyter Notebook for it.
+3. **Go trough the notebooks**:
+    - In the `exploration` file you can find the  Exploratory Data Analysis (EDA).
+    
+    - And in the `classification` file you can find the resampling of the Imbalaced Data, preprocesing steps, classification models and evaluation.
 
-4. **Access the model**:
-    - The `model` directory contains a train.py that trains the RandomForestRegression model and evaluate it, and a predict.py that predicts the price of a house based on a given dataset.
+4. **Look into visuals**:
+    - The `visuals` directory contains visualizations, including a decision tree.
 
-5. **Explore the script app.py**
-    - The `app.py` script contains everything for running the app.
+## 💡Data Sources
 
-## 👑 Data Sources
-[Streamlit documentation](https://docs.streamlit.io/)
+Kaggle: 
+- [Credit Card customers dataset](https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers)
+- [Credit Card Customer Segmentation + EDA](https://www.kaggle.com/code/tkunzler/credit-card-customer-segmentation-eda#TABLE-OF-CONTENTS) 
+- [Customer Attrition Prediction](https://www.kaggle.com/code/messier74/customer-attrition-prediction)
+- [Bank churn prediction](https://www.kaggle.com/code/jeffaj/bank-churn-prediction-recall-96-87-acc-95-68/notebook#2.-EDA-:-Exploratory-data-analysis)
+- [Credit Card Customers Churn Prediction](https://www.kaggle.com/code/abraamsaid/credit-card-customers-churn-prediction#1--Import-Libraries-%F0%9F%93%9A)
 
-[Deploy your app](https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app)
+Analytics Vidhya:
+- [Guide to AUC ROC Curve in Machine Learning : What Is Specificity?](https://www.analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/)
+- [10 Techniques to Solve Imbalanced Classes in Machine Learning (Updated 2024)](https://www.analyticsvidhya.com/blog/2020/07/10-techniques-to-deal-with-class-imbalance-in-machine-learning/)
 
-https://www.kaggle.com/code/tkunzler/credit-card-customer-segmentation-eda#TABLE-OF-CONTENTS
+GitHub: 
+- [How to handle imbalanced datasets](https://github.com/dataprofessor/imbalanced-data/blob/main/imbalanced_learn.ipynb)
+
+DataCamp:
+- [Decision Tree Classification in Python Tutorial](https://www.datacamp.com/tutorial/decision-tree-classification-python)
+
+Imbalanced-learn:
+- [imbalanced-learn documentation](https://imbalanced-learn.org/stable/index.html)
+- [SMOTENC](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTENC.html)
+
+Scikit-learn:
+- [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
+- [RamdomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+- [DecisionTreeClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html)
 
 ## 🎨 Visuals
-Will be added soon.
+**Correlation Heatmap of numerical categories :**
+
+<img src="visuals\heatmap.png" width="800" height="600">
+
+<br>
+
+**Resampling with SMOTENC :**
+
+<img src="visuals\smotenc.png" width="300" height="300">
+
+<br>
+
+**Evaluation of the models with ROC curve:**
+
+<img src="visuals\ROC.png" width="500" height="400">
+
 
 ## ⏱️ Timeline
 This project took form in five days.
