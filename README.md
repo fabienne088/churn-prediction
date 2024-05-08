@@ -7,7 +7,7 @@ An important financial institution is interested in analyzing its client databas
 
 The churn rate is above 15% and increasing, the CEO urges the marketing team to start a marketing campaign for client retention.
 
-Your mission:
+The mission:
 
 - Predict those clients with more propensity to close their bank account with the financial institution
 - Find possible groups of clients and define their characteristics. This will help the marketing team to design custom-made campaigns to increase customer retention. (will be discussed later)
@@ -33,14 +33,15 @@ _The churn rate, also known as the rate of attrition or customer churn, is the r
 │   └── 0_g8Tw7FNqfLJXptYE.webp
 │
 ├── visuals\
-│   ├── ROC.png
 │   ├── decision_tree_grphviz
 │   ├── decision_tree_grphviz.png
 │   ├── decistion_tree.log
 │   ├── decistion_tree.png
 │   ├── feature_importance.png
 │   ├── heatmap.png
-│   └── pairplot.png
+│   ├── pairplot.png
+│   ├── roc.png
+│   └── smotenc.png
 │
 ├── .gitignore
 ├── README.md
